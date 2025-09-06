@@ -9,16 +9,16 @@ RUN apt update
 RUN apt install nano iputils-ping net-tools -y
 
 #Set App Env
-ENV var1=123
-ENV var2=hello
-ENV var3=docker
+#ENV var1=123
+#ENV var2=hello
+#ENV var3=docker
 
 #Create app files
-RUN touch file1.txt
-RUN mkdir docker_files
+#RUN touch file1.txt
+#RUN mkdir docker_files
 
 #allow ports 80 and 22
-EXPOSE 80/tcp 22/tcp 443/tcp
+#EXPOSE 80/tcp 22/tcp 443/tcp
 
 #Set Working Directory 
 WORKDIR /usr/local/apache2

@@ -27,4 +27,4 @@ WORKDIR /usr/local/apache2
 CMD ["httpd-foreground"]
 
 #Copy Project/App files
-#COPY /var/lib/jenkins/workspace/clone/index.html /usr/local/apache2/htdocs/index.html
+COPY /var/lib/jenkins/workspace/clone/index.html /usr/local/apache2/htdocs/index.html
